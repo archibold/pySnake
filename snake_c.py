@@ -45,7 +45,7 @@ class Snake:
         pos = self.head.pos()
         if (pos[0] > 285 or pos[0] < -285) or (pos[1] > 285 or pos[1] < -285):
             return False
-        for elem in self._elements[1:0]:
+        for elem in self._elements:
             elem.forward(10)
             if self.head == elem:
                 pass
